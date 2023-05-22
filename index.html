@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Druzi</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header_container">
+        <nav class="header_nav">
+          <a class="logo" href="./index.html"
+            ><img src="./images/logo.png" alt="logo" width="55" height="62"
+          /></a>
+          <ul class="menu header_list_nav">
+            <li class="header_item_nav">
+              <a class="link" href="#About">About</a>
+            </li>
+            <li class="header_item_nav">
+              <a class="link" href="#Services">Services</a>
+            </li>
+            <li class="header_item_nav">
+              <a class="link" href="#Cases">Cases</a>
+            </li>
+            <li class="header_item_nav">
+              <a class="link" href="#">News</a>
+            </li>
+            <li class="header_item_nav">
+              <a class="link" href="#">Careers</a>
+            </li>
+            <li class="header_item_nav">
+              <a class="link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header_list_lang">
+          <li class="header_item_lang">
+            <button type="button" class="header_lang_btn">UA</button>
+          </li>
+          <li class="header_item_lang">
+            <button
+              type="button"
+              class="header_lang_btn header_lang_btn-active">EN</button>
+          </li>
+        </ul>
+      </div>
+      <button class="header__btn js-open-menu" type="button">
+        <svg class="" width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section class="main screen">
+        <div class="container main-container">
+          <img
+            src="./images/logo_hero.png"
+            alt="Logo"
+            width="210"
+            height="92"
+          />
+          <h1 class="main_title">A one-stop marketing hub</h1>
+          <p class="main_text">
+            One agency for all marketing tasks of your business.
+          </p>
+          <div class="main_group">
+            <p class="main_group_text">Check it out!</p>
+            <button class="main_group_button" type="button">
+              <svg class="main_group_button_svg" width="46" height="28">
+                <use href="./images/symbol-defs.svg#icon-mail"></use></svg>Right here
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="about screen" id="About">
+        <div class="container about_container">
+          <h2 class="about_title">About</h2>
+          <ul class="about_list">
+            <li class="about_item">
+              <span class="about_item_span">DRUZI marketing hub</span> is the
+              one-stop marketing agency for all marketing tasks. 
+              <br />This
+              means that DRUZI is the one-stop agency for all your company's
+              marketing needs. We are your complete marketing department.
+              <br />We work in the hub format: DRUZI and the company's marketing
+              team are a single whole, only we are outsourced. We work under the
+              supervision of the CEO or CMO. We will jointly agree on the
+              company's strategy, tactical decisions, and budgets to achieve
+              your goals.
+            </li>
+            <li class="about_item">
+              <span class="about_item_span">What is DRUZI about?</span> About
+              the efficiency of your business. On the wise use of marketing
+              budgets. About the cooperation of happy people.
+             <br />That is why
+              we are the one-stop agency for our customers. This format
+              optimizes the time spent on briefs and related communications. In
+              addition, customers receive updates from all areas of work from
+              one manager at a convenient time. Like a true friend: write to us,
+              and we will resolve all issues together.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="service screen" id="Services">
+        <div class="container service_container">
+          <h2 class="service_title">Our services for your business</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service_item">
+                  <h3 class="service_item_title">Marketing challenges</h3>
+                  <img
+                    src="./images/decorative.jpg"
+                    alt="Decorative"
+                    width="221"
+                    height="16"
+                    class="service_img"
+                  />
+                  <a href="#" class="service_link"
+                    >READ MORE<svg
+                      class="service_link_svg"
+                      width="24"
+                      height="32"
+                    >
+                      <use
+                        href="./images/symbol-defs.svg#icon-arrow"></use></svg></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service_item">
+                  <h3 class="service_item_title">
+                    Events and advertising campaigns
+                  </h3>
+                  <img
+                    src="./images/decorative.jpg"
+                    alt="Decorative"
+                    width="221"
+                    height="16"
+                    class="service_img"
+                  />
+                  <a href="#" class="service_link"
+                    >READ MORE<svg
+                      class="service_link_svg"
+                      width="24"
+                      height="32"
+                    >
+                      <use
+                        href="./images/symbol-defs.svg#icon-arrow"
+                      ></use></svg></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service_item">
+                  <h3 class="service_item_title">
+                    Analytics Business
+                    <span class="about_item_span">&</span> Marketing
+                  </h3>
+                  <img
+                    src="./images/decorative.jpg"
+                    alt="Decorative"
+                    width="221"
+                    height="16"
+                    class="service_img"
+                  />
+                  <a href="#" class="service_link"
+                    >READ MORE<svg
+                      class="service_link_svg"
+                      width="24"
+                      height="32"
+                    >
+                      <use
+                        href="./images/symbol-defs.svg#icon-arrow"
+                      ></use></svg></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service_item">
+                  <h3 class="service_item_title">Creative & design</h3>
+                  <img
+                    src="./images/decorative.jpg"
+                    alt="Decorative"
+                    width="221"
+                    height="16"
+                    class="service_img"
+                  />
+                  <a href="#" class="service_link"
+                    >READ MORE<svg
+                      class="service_link_svg"
+                      width="24"
+                      height="32"
+                    >
+                      <use
+                        href="./images/symbol-defs.svg#icon-arrow"
+                      ></use></svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <div class="service_list_mobile">
+        <div class="service_item">
+          <h3 class="service_item_title">Marketing challenges</h3>
+          <img
+            src="./images/decorative.jpg"
+            alt="Decorative"
+            width="221"
+            height="16"
+            class="service_img"
+          />
+          <a href="#" class="service_link"
+            >READ MORE<svg class="service_link_svg" width="24" height="32">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use></svg></a>
+        </div>
+        <div class="service_item">
+          <h3 class="service_item_title">Events and advertising campaigns</h3>
+          <img
+            src="./images/decorative.jpg"
+            alt="Decorative"
+            width="221"
+            height="16"
+            class="service_img"
+          />
+          <a href="#" class="service_link"
+            >READ MORE<svg class="service_link_svg" width="24" height="32">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use></svg></a>
+        </div>
+        <div class="service_item">
+          <h3 class="service_item_title">
+            Analytics Business <span class="about_item_span">&</span> Marketing
+          </h3>
+          <img
+            src="./images/decorative.jpg"
+            alt="Decorative"
+            width="221"
+            height="16"
+            class="service_img"
+          />
+          <a href="#" class="service_link"
+            >READ MORE<svg class="service_link_svg" width="24" height="32">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use></svg></a>
+        </div>
+        <div class="service_item">
+          <h3 class="service_item_title">Creative & design</h3>
+          <img
+            src="./images/decorative.jpg"
+            alt="Decorative"
+            width="221"
+            height="16"
+            class="service_img"
+          />
+          <a href="#" class="service_link"
+            >READ MORE<svg class="service_link_svg" width="24" height="32">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use></svg></a>
+        </div>
+      </div>
+      <section class="cases screen" id="Cases">
+        <div class="container cases_cotainer">
+          <h2 class="cases_title">Our cases</h2>
+          <div class="video-slider">
+            <ul class="video-slider-list">
+              <li class="video-slider-item active">
+                <iframe
+                  src="https://www.youtube.com/embed/Yh6JxuDijpo"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p class="cases_date_text">2023-2022</p>
+              </li>
+              <li class="video-slider-item">
+                <iframe
+                  src="https://www.youtube.com/embed/X6fY-ne_e2M"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p class="cases_date_text">2021-2020</p>
+              </li>
+              <li class="video-slider-item">
+                <iframe
+                  src="https://www.youtube.com/embed/uwHNPX6iKUU"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p class="cases_date_text">2019-2018</p>
+              </li>
+              <li class="video-slider-item">
+                <iframe
+                  src="https://www.youtube.com/embed/L7f1z2G-GTo"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p class="cases_date_text">2017-2014</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><div class="container"></div></footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-close js-close-menu"
+        aria-label="Кнопка для закриття меню"
+      >
+        <svg class="menu-close__icon" width="19" height="19">
+          <use href="./images/symbol-defs.svg#icon-clear"></use>
+        </svg>
+      </button>
+
+      <nav class="header_nav_mobile">
+        <a class="logo_mobile" href="./index.html"
+          ><img src="./images/logo.png" alt="logo" width="55" height="62"
+        /></a>
+        <ul class="menu header_list_nav_mobile">
+          <li class="menu_item_mobile">
+            <a class="current_mobile" href="./index.html">About</a>
+          </li>
+          <li class="menu_item_mobile">
+            <a class="link_mobile" href="#">Services</a>
+          </li>
+          <li class="menu_item_mobile">
+            <a class="link_mobile" href="#">Casses</a>
+          </li>
+          <li class="menu_item_mobile">
+            <a class="link_mobile" href="#">News</a>
+          </li>
+          <li class="menu_item_mobile">
+            <a class="link_mobile" href="#">Careers</a>
+          </li>
+          <li class="menu_item_mobile">
+            <a class="link_mobile" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header_list_lang">
+        <li class="header_item_lang">
+          <button type="button" class="header_lang_btn">UA</button>
+        </li>
+        <li class="header_item_lang">
+          <button type="button" class="header_lang_btn-active">EN</button>
+        </li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: -560,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/video-swipper.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/current.js"></script>
+  </body>
+</html>
