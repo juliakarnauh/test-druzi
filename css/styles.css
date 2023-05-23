@@ -321,6 +321,8 @@ img {
 }
 
 .video-slider {
+  height: 467px;
+  width: 100%;
   display: flex;
   margin-right: auto;
   margin-bottom: 40px;
@@ -339,34 +341,70 @@ img {
   margin: 0;
 }
 
-.video-slider-item iframe {
+.video-slider-item {
+  position: relative;
+  flex-shrink: 0;
   width: 147px;
   height: 393px;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  flex-grow: -200;
-  flex-shrink: 0;
-  flex-basis: auto;
   box-shadow: -80px 2px 47px 23px #000000;
+  transition: width 0.3s ease-in-out;
 }
-.video-slider-item:last-child iframe {
+
+.video-slider-item:last-child {
   width: 100%;
 }
-.video-slider-item.active iframe {
-  margin-right: 79px;
+
+.video-slider-item.active {
   width: 703px;
-  height: 393px;
-  flex-grow: 1;
+  background-color: var(--accent-color);
+  margin-right: 50px;
+}
+
+.video-slider-item iframe,
+.video-slider-item .video-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-slider-item:nth-child(2) .video-link {
+  background-color: #F5544B;
+}
+
+.video-slider-item:nth-child(3) .video-link {
+  background-color: #2844E6;
+}
+
+.video-slider-item:last-child .video-link {
+  background-color: #595CD4;
+}
+.video_link_item{
+  position: absolute;
+ bottom: 12px;
+  left: 12px;
+}
+.video_item_svg {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: var(--background);
 }
 .cases_date_text {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: var(--title-text-color);
-  margin-top: 35px;
-  margin-bottom: 184px;
 }
+
 .service_list_mobile {
   width: 100%;
   margin-left: auto;
@@ -474,30 +512,33 @@ img {
     margin-left: 15px;
   }
   .video-slider {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
   .video-slider-list {
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
-    align-items: center;
+    align-items: flex-start;
   }
+
   .video-slider-item {
-    width: 300px;
+    width: auto;
     height: 160px;
   }
-  .video-slider-item iframe {
-    width: 300px;
-    height: 160px;
+
+  .video-link {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
   }
-  iframe {
-    width: 300px;
-    height: 160px;
+
+  .video-link .video-link-item {
+    position: static;
+    width: 100%;
+    height: 100%;
   }
-  .video-slider-item.active iframe {
-    width: 300px;
-    height: 160px;
-  }
+
   .header_lang_btn-active {
     border: none;
     background-color: inherit;
